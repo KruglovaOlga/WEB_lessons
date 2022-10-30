@@ -108,6 +108,55 @@
         <dt>HTML/CSS</dt>
         <dd>HyperText Markup Language/ Cascading Style Sheets</dd>
     </dl>
-    
+    <hr>
+    <form> 
+        <input type="text" name=“lastname“>
+        <textarea name=“details" rows=“5" cols=“50">Δώστε το επώνυμό σας</textarea>
+        <select name=“fruits">
+            <option value=“Apples">Apples</option>
+            <option value=“Oranges">Oranges</option>
+        </select>
+        <input type="checkbox" name="fruits" value=“Apples“/>Apples<br>
+        <input type="checkbox" name=“fruits" value=“Oranges“ checked /> Oranges<br>
+        <input type="radio" name="mstatus" value="nmar" checked>non-married<br>
+        <input type="radio" name="mstatus" value=“mar">Married <br>
+        <input type= "submit" value= "Πατήστε Click"> <br>
+        </form>
+        <hr>
+        <!-- Τα <div> είναι containers και χρησιμοποιούνται για
+            να δώσουν δομή στη φόρμα ώστε τα στοιχεία της φόρμας
+            (ζεύγη label/input) να είναι το ένα κάτω από το άλλο
+            • Για usability και accessibility έχουμε χρησιμοποιήσει
+            την ιδιότητα for σε κάθε label με τιμή το id του αντίστοιχου
+            input, ώστε όταν κάνει κλικ ο χρήστης στο Label να πατιέται το 
+            αντίστοιχο input -->
+
+            <form>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+        
+                </div>
+        
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+        
+                </div>
+        
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="60" rows="10"></textarea> 
+        
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+               
+        
+               
+            </form>    
+
+    <hr>
 </body>
 </html>
