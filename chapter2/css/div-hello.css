@@ -1,0 +1,46 @@
+body {
+    background-color: gray;
+}
+
+.container-fluid {
+    /* width: 90%; */
+    display: flex;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid black;
+}
+
+.aueb-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color:antiquewhite;
+}
+
+.bg-primary {
+    background-color: blue;
+}
+
+.icon-small {
+    width: 150px;
+    height: auto;
+}
+
+.course-wrapper {
+    background-color: aquamarine;
+}
+
+.course-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: beige;
+
+}
+
+.bg-dark {
+    background-color: black;
+}
+

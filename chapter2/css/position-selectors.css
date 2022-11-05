@@ -1,0 +1,32 @@
+/* επιλέγουμε με > τους άμεσους
+απόγονους <li> του <ul> και δίνουμε styling */
+
+ul > li {
+    color: darkmagenta;
+}
+
+
+/* Για να επιλέξουμε απογόνους (όχι μόνο άμεσους) δεν
+χρησιμοποιούμε > αλλά απλά κενό.
+επιλέγουμε τα <strong> και <em> ως απογόνους του <ul> */
+
+ul > li {
+    color: blue;
+}
+
+ul strong {
+    background-color: grey;
+}
+
+ul em {
+    background-color: bisque;
+}
+
+
+/* Σημαίνει: Επέλεξε μία παράγραφο που βρίσκεται
+αμέσως μετά ένα h1 στο ίδιο επίπεδο ιεραρχίας
+(adjacent sibling combinator) */
+
+h1 + p {
+    background-color: aqua;
+}

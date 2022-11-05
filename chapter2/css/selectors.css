@@ -1,0 +1,46 @@
+
+/* body {
+    background-color: antiquewhite;
+}
+
+p, li {
+    color: brown;
+    background-color: darkgrey;
+}
+
+Το body αφορά όλη τη σελίδα
+• Μπορούμε να ορίσουμε πολλαπλούς selectors διαχωρίζοντάς τους με κόμμα
+• Το list-style-type είναι ένα CSS property
+που δίνει styling στα bullets των <li> */
+
+/* li {
+    list-style-type: square;
+}
+• Μπορούμε να αλλάξουμε το default styling των browsers
+• Για παράδειγμα στις unordered λίστες μπορούμε να
+αφαιρέσουμε την κουκίδα ή να ορίσουμε κάποιο άλλο σύμβολο,
+π.χ. τετράγωνο (square) */
+
+*{
+    margin: 10px 2px;
+}
+
+.container {
+    background-color: gray;
+}
+
+.container>h2:first-of-type {
+    font-size: 24px;
+}
+
+.container> p:first-of-type {
+    color: red;
+}
+
+ul > li:first-child {
+    font-weight: bold;
+}
+
+ul > li:nth-child(3) {
+    color: green;
+}
