@@ -1,1 +1,32 @@
+.container {
+    width: 90%;
+}
 
+.cv-name {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-style:normal;
+    color: royalblue;
+    text-decoration: underline;
+    
+}
+
+.cv-contact {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cv-profession {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+  
+.box {
+    width: 18em;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    line-height: 1.1em;
+    border: solid #bd1fff;
+    border-width:4px;
+    background-color:#dbd7d7;
+  }
