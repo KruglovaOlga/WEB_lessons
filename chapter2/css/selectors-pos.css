@@ -1,0 +1,28 @@
+img {
+    width: 500px;
+    height: auto;
+}
+
+ul a:link {
+    color: black;
+}
+
+ul > li {
+    border: 1px solid black;
+}
+
+ul > li:first-child {
+    color: red;
+}
+
+ul > li:first-child {
+    list-style: square;
+}
+
+h1 + p {
+    font-size: 22px;
+}
+
+img ~ h1 {
+    font-size: 3rem;
+}
