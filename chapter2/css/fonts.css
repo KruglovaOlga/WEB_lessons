@@ -19,7 +19,7 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     color:#762124;
-    text-shadow: 2px 2px 2px red;
+    text-shadow: -2px -2px 2px red;
     text-decoration: underline;
 }
 
