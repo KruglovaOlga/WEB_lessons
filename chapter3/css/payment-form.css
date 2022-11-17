@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+div {
+    margin-top: 30px;
+}
+
+form {
+    width: 80%;
+}
+
+.card {
+    background-color: #c5bbbb;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+input {
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input:focus {
+    outline: 1px solid #000;
+}
+
+button {
+    margin: 20px 0 0 120px;
+}
+
+fieldset {
+    width: 250px;
+    margin-left: 135px;
+}
+
+abbr {
+    color: red;
+}
