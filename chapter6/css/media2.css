@@ -1,0 +1,10 @@
+body {
+    background-color: green;
+}
+
+/* --the same rule */
+@media all {
+    body {
+        background-color: green;
+    }
+}
