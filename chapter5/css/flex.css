@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+div[class^="box"] {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    color: brown;
+    background-color: aquamarine;
+
+}
+
+.box1 {
+    order: 6;
+    align-self: flex-start;
+}
+
+.box5 {
+    order: -1;
+    align-self: flex-end;
+}
