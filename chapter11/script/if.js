@@ -15,5 +15,17 @@
 // }
 /*************************************** */
 
-let n = 2
-console.log(n ? `you have ${n} messages!` : "No messages")
+// let n = 2
+// console.log(n ? `you have ${n} messages!` : "No messages")
+/*********************************************** */
+
+if (grade >= 5) {
+    document.write('Pass - ')
+    if (grade >= 8) {
+        document.write('Excellent')
+    } else {
+        document.write('Very Well')
+    }
+} else {
+    document.write('Fail')
+}

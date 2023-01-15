@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const EUROS_PER_100EUROS = 100
+        let euros = 210
+        let euros100
+        let remainingEuros
+
+        /*
+        H Math.floor() αποκόπτει τα δεκαδικά
+        Math.round() στρογγυλοποίει προς τα κάτω
+        Math.ceil() στρογγυλοποίει προς τα πάνω
+        Το % επιστρέφει το ακέραιο υπόλοιπο της διαίρεσης
+        */
+       euros100 = Math.floor(euros / EUROS_PER_100EUROS)
+       remainingEuros = euros % EUROS_PER_100EUROS
+
+       document.write(`${euros} euros = ${euros100} * 100euros & ${remainingEuros} euros`)
+    </script>
+</body>
+</html>
