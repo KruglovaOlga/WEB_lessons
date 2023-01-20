@@ -6,6 +6,7 @@ console.log("Boolean(null): " + Boolean(null))
 console.log("Boolean(undefined): " + Boolean(undefined))
 console.log("Boolean({}): " + Boolean({}))
 console.log("Boolean(new Boolean(false)): " + Boolean(new Boolean(false)))
+
 console.log((0) ? '1 is true' : (0) ? '1 is true' : '0 is false')
 
 while(1){

@@ -14,7 +14,7 @@ if (Number.isInteger(num)) {
 
 let aNum = 4 / 'a'
 if(Number.isNaN(aNum)) {
-    console.log("Number.isNan(4/'a')" + Number.isNan(4/'a' ))
+    console.log("Number.isNan(4/'a'):" + aNum)
 } else {
     console.log(aNum)
 }
