@@ -43,4 +43,63 @@ console.log(out)
 
 //or
 
-//let out =
+//let out = ""
+for (let item of array3) {
+    out += item + ", "
+}
+console.log(out)
+
+/*• Αν θέλουμε και τα indexes με τον for/of
+μπορούμε να πάρουμε την
+Object.entries() με array Destructuring
+στα [i, item]
+*/
+//let out = ""
+for (let [i, item] of Object.entries(array3)) {
+    out += `[${i} : ${item}]`
+}
+console.log(out)
+
+/* • H forEach() λαμβάνει υπόψη τα sparse
+arrays και δεν εκτυπώνει τα
+undefined elements*/
+//let out = ""
+array3.forEach(elem => out += elem + ", ")
+console.log(out)
+
+/* • Η concat δεν κάνει modify το array στο οποίο
+καλείται. Δημιουργεί ένα καινούργιο copy*/
+let b10 = [1, 2, 3]
+b10.concat(4,[5, 6]) //[1, 2, 3, 4, 5, 6] length=6
+
+/*Η delete δημιουργεί sparse arrays, δεν μειώνεται το
+length.*/
+let grades = [8, 9, 6, 5, 2]
+delete grades[0]
+console.log(grades)  //[empty, 9, 6, 5, 2]
+
+/*Η push() προσθέτει στο τέλος*/
+grades.push(10) // [empty, 9, 6, 5, 2, 10]
+
+/*Η splice() είναι μία γενική μέθοδος που
+επιτρέπει insert, remove, replace
+• Τεχνικά κάνει remove ’slices’ (subarrays) από το
+αρχικό array και (προαιρετικά) τα αντικαθιστά */
+let b9 = [1, 2, 3, 4, 5, 6, 7, 8]
+b9.splice(0, 4) //[1, 2, 3, 4] are deleted, b9=[5, 6, 7, 8]
+b9.splice(2, 1) // [7], b9=[5, 6, 8], Delete από τη θέση με index 2 ένα στοιχείο
+b9.splice(1, 0, 17) // 0 items deleted from position 1. At this position add 17
+                    // All other elements (6, 8) will shift right b9=[5, 17, 6, 8] "insert"
+b9.splice(1, 1, 12) // delete and insert at position index 1. b9=[5, 12, 6, 8] "update"
+b9.unshift(0) //b9=[0, 5, 12, 6, 8]   
+
+let b8 = Array(5)
+b8.fill(0)  //fill with zeros
+b8.fill(5, 1) // fill with 5, start-index is 1
+b8.fill(8, 2, 3)  //fill with 8, start-index 2, end-index 3-1 = 2
+//Το τελευταίο στοιχείο είναι endIndex -1
+
+b8.copyWithin(0, 2) //copies elements with startIndex 2 till the end at position 0
+b8.copyWithin(3, 0, 2) //copies at position index 3, the 2 elements from index 0 to 1
+//Μπορεί η 2 η παράμετρος να έχει και αρνητικές τιμές, οπότε είναι το offset από το τέλος
+

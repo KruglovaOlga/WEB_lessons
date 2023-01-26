@@ -1,6 +1,7 @@
 const numbers = [45, 2, 56, 15]
 numbers.forEach(function(x){
     console.log(x)
+    //number.forEach((x => console.log(x)))
 })
 
 const data = [
